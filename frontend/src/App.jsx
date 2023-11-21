@@ -5,9 +5,10 @@ export default function App() {
   return (
     <div className="App">
       <section className="App-header">
-        <h1 className="Titlerule">Rules: Design Studio Quest</h1>
+        <h1 className="Titlerule"> Design Studio Quest rules </h1>
         <p className="Intro">Hey, what's up !</p>
-        <p>Welcome to Design Studio Quest.</p>
+        <p>
+          Welcome to Design Studio Quest.</p>
         <p>
           In this game, you play the role of a new graphic designer who wants
           to create their own graphics studio by purchasing equipment and

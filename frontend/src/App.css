@@ -38,10 +38,11 @@ font-weight: bold;
 }
 
 .Titlerule {
-  font-size: 24px;
+  font-size: 27px;
   font-weight: bold;
   text-align: center;
   font-family: Paintlova;
+  animation: color-animation 4s linear infinite;
 }
 
 .Intro {
