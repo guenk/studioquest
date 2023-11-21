@@ -1,5 +1,4 @@
-import Counter from "./components/Counter";
-import logo from "./assets/logo.svg";
+
 
 import "./App.css";
 
@@ -7,32 +6,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React !</p>
 
-        <Counter />
+        <h1 className="titlerule"> Rules: Design Studio Quest </h1>
 
         <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
+          xgzxuzuxaouczuozacuoacouaczuo
         </p>
         <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {" | "}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
+        xgzxuzuxaouczuozacuoacouaczuo
         </p>
       </header>
     </div>
