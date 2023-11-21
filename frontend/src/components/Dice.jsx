@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./style.scss";
+import "./style.css";
 
 export default function Dice() {
   const [count, setCount] = useState(1);

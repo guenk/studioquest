@@ -1,47 +1,87 @@
-body {
+@media only screen and (max-width: 400px) {
+
+/* /* body {
   margin: 0;
   text-align: center;
-  background-image: url("./assets/wallrules.jpg");
+  background-image: url("./assets/mobile.jpg");
   background-size: cover; /* Pour ajuster la taille de l'image pour remplir le conteneur */
-  background-repeat: no-repeat;
-  width:100vw;
-height:100vh;
+  background-repeat: no-repeat; */
+
   
-}
+.App {
+  margin: 20px;
+  
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-    margin: 0;
-}
-
-.html {
-  margin-top: 0;
 }
 
 .App-header {
-  font-family: Fontmont;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-top: 20vh;
-  width:72vw;
+  background-image: url("./assets/mobile.jpg");
+  background-size: cover; /* Pour ajuster la taille de l'image pour remplir le conteneur */
+  background-repeat: no-repeat;
+  font-family: Verdana;
+  padding: 30px;
+  color: black;
+  box-shadow:
+  inset #009688 0 0 0 5px, 
+  inset #059c8e 0 0 0 1px, 
+  inset #0cab9c 0 0 0 10px, 
+  inset #1fbdae 0 0 0 11px, 
+  inset #8ce9ff 0 0 0 16px, 
+  inset #48e4d6 0 0 0 17px, 
+  inset #e5f9f7 0 0 0 21px, 
+  inset #bfecf7 0 0 0 22px;
+text-shadow: 3px 3px 1px #9cd6e5;
+font-size: 11px;
+font-weight: bold;
 }
 
- .wallrules {
-  width:100vw;
-height:100vh;
+.Titlerule {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Paintlova;
+}
 
+.Intro {
+  font-size: 18px;
+  text-align: center;
+  font-family: Paintlova;
 }
-.titlerule {
- 
-  
+
+.Preparation {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  font-family: Paintlova;
 }
-.App-link {
-  color: #61dafb;
-} 
+
+.Howtoplay {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  font-family: Paintlova;
+}
+
+.Notabene {
+  font-size: 10px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+li {margin-top: 1vh;
+  text-align: left;
+list-style: none;}
 
 @font-face {
   font-family: Fontmont;
   src: url("./assets/Painted.ttf");
+}
+@font-face {
+  font-family: Paintlova;
+  src: url("./assets/paintlova.ttf");
+}
+
+
 }
