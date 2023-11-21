@@ -1,4 +1,4 @@
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 
 /* /* body {
   margin: 0;
@@ -18,6 +18,8 @@
   background-image: url("./assets/mobile.jpg");
   background-size: cover; /* Pour ajuster la taille de l'image pour remplir le conteneur */
   background-repeat: no-repeat;
+  height:100vh;
+  overflow-y: hidden;
   font-family: Verdana;
   padding: 30px;
   color: black;
