@@ -156,6 +156,12 @@ th {
    color:#F3EA68;
    border-color:#F3EA68;
 }
+.bord {
+  border-color: rgb(250, 103, 120);
+}
+.po{
+  border-color:#F3EA68;
+}
 td {
   height: 5vh;
   width:80vw;

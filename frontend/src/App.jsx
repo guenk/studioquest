@@ -75,28 +75,28 @@ export default function App() {
     <th className="points">Points</th>
   </tr>
   <tr>
-    <td>Plant</td>
-    <td>1 point</td>
+    <td className="bord">Plant</td>
+    <td className="po">1 point</td>
   </tr>
   <tr>
-    <td>Office chair</td>
-    <td>2 points</td>
+    <td className="bord">Office chair</td>
+    <td className="po">2 points</td>
   </tr>
   <tr>
-    <td>Desk</td>
-    <td>2 points</td>
+    <td className="bord">Desk</td>
+    <td className="po">2 points</td>
   </tr>
   <tr>
-    <td>PC</td>
-    <td>3 points</td>
+    <td className="bord">PC</td>
+    <td className="po">3 points</td>
   </tr>
   <tr>
-    <td>Graphic table</td>
-    <td>3 points</td>
+    <td className="bord">Graphic table</td>
+    <td className="po">3 points</td>
   </tr>
   <tr>
-    <td>Adobe creative cloud</td>
-    <td>4 points</td>
+    <td className="bord">Adobe creative cloud</td>
+    <td className="po">4 points</td>
   </tr>
 </table>
         
