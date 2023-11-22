@@ -1,6 +1,6 @@
 
 import "./App.css";
-import logo from "./assets/logo.png";
+import logo from "./assets/cd.png";
 import one from "./assets/1.png";
 import two from "./assets/2.png";
 import three from "./assets/3.png";
@@ -69,6 +69,37 @@ export default function App() {
           Note: You can also choose to play without buying items if you just
           want to have fun answering questions!
         </p>
+        <table border="1">
+  <tr>
+    <th>Items</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Plant</td>
+    <td>1 point</td>
+  </tr>
+  <tr>
+    <td>Office chair</td>
+    <td>2 points</td>
+  </tr>
+  <tr>
+    <td>Desk</td>
+    <td>2 points</td>
+  </tr>
+  <tr>
+    <td>PC</td>
+    <td>3 points</td>
+  </tr>
+  <tr>
+    <td>Graphic table</td>
+    <td>3 points</td>
+  </tr>
+  <tr>
+    <td>Adobe creative cloud</td>
+    <td>4 points</td>
+  </tr>
+</table>
+        
       </section>
     </div>
   );
