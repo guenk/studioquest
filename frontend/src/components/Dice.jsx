@@ -45,7 +45,7 @@ export default function Dice() {
   return (
     <>
       <button className="buttonspin" onClick={handleSpinClick} disabled={isSpinning}>
-        {isSpinning ? 'Spinning...' : 'Spin'}
+        {isSpinning ? 'Spinning...' : 'Spin the wheel !'}
       </button>
       <Wheel
         mustStartSpinning={mustSpin}

@@ -19,7 +19,7 @@ export default function App() {
         
         Rules
         </h1>
-        <p className="Intro">Hey, what's up !</p>
+        <p className="Intro">Hey, what's up ?!</p>
         <p>
           Welcome to Design Studio Quest.</p>
         <p>

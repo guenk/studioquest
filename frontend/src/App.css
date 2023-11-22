@@ -21,18 +21,12 @@ border: #A1D8E6 5px solid;
  
     display: flex;
     width: 56vw;
-    animation: rotateLogo 5s linear infinite;
     margin-bottom: 2vh;
-  
   }
-
-  @keyframes rotateLogo {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
   }
 
 .App-header {
@@ -78,6 +72,7 @@ font-weight: bold;
   text-align: center;
   font-family: Paintlova;
   color:#F3EA68;
+  animation: blink 2s infinite;
 }
 
 .Preparation {
