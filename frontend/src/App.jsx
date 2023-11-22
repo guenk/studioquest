@@ -4,10 +4,12 @@ import logo from "./assets/log.png";
 import one from "./assets/1.png";
 import two from "./assets/2.png";
 import three from "./assets/3.png";
+import Dice from "./components/Dice";
 
 export default function App() {
   return (
     <div className="App">
+      
       
       <section className="App-header">
         <div className="cont">
@@ -99,8 +101,9 @@ export default function App() {
     <td className="po">4 points</td>
   </tr>
 </table>
-        
+<Dice />
       </section>
     </div>
+    
   );
 }
