@@ -1,11 +1,22 @@
 
 import "./App.css";
+import logo from "./assets/logo.png";
+import one from "./assets/1.png";
+import two from "./assets/2.png";
+import three from "./assets/3.png";
 
 export default function App() {
   return (
     <div className="App">
+      
       <section className="App-header">
-        <h1 className="Titlerule"> Design Studio Quest rules </h1>
+        <div className="cont">
+      <img src={logo} className="logo" alt="logo" />
+      </div>
+        <h1 className="Titlerule"> 
+        
+        Rules
+        </h1>
         <p className="Intro">Hey, what's up !</p>
         <p>
           Welcome to Design Studio Quest.</p>
@@ -19,7 +30,7 @@ export default function App() {
           all the necessary items!
         </p>
         <p className="Preparation">
-          To set up the game, follow these steps:
+          To set up the game, follow these steps :
         </p>
         <ol>
           <li>Put the board with the arrow in the middle of the players.</li>
@@ -29,19 +40,22 @@ export default function App() {
           <li>The youngest player will play first.</li>
         </ol>
         <p className="Howtoplay">
-          Here's how to play the game:
+          Here's how to play the game :
         </p>
         <ol>
           <li>
+          <img src={one} className="one" alt="one" />
             The first player will spin the arrow and land on a topic. They have
             to answer a question related to that topic. Before answering, they
             can choose the difficulty of the question (easy, medium, or hard).
           </li>
           <li>
+          <img src={two} className="two" alt="two" />
             If the player answers correctly, they win tokens based on the
             difficulty of the question (1 to 3 tokens).
           </li>
           <li>
+          <img src={three} className="three" alt="three" />
             On each turn, the player can choose to either use their tokens to
             buy an item or spin the arrow to answer a question. They cannot do
             both, but they can buy 2 items in the same turn (not 3 or more).

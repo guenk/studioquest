@@ -9,21 +9,33 @@
 
   
 .App {
-  margin: 20px;
-  
+border: #A1D8E6 5px solid;
 
 }
-
+.cont {
+  display:flex;
+  width:100vw;
+  justify-content: center;
+}
+.logo {
+  display:flex;
+  width:50vw;
+}
 .App-header {
-  background-image: url("./assets/mobile.jpg");
-  background-size: cover; /* Pour ajuster la taille de l'image pour remplir le conteneur */
-  background-repeat: no-repeat;
-  height:100vh;
-  overflow-y: hidden;
-  font-family: Verdana;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: Barlow;
   padding: 30px;
-  color: black;
-  box-shadow:
+  color: white;
+  background-color: #0F4F6F;
+  border-left: #A1D8E6 8px solid;
+  border-right: #F3EA68 8px solid;
+  border-bottom: rgb(250, 103, 120) 8px solid;
+  border-top: #A1D8E6 8px solid;
+
+  border-radius: 10px;
+  /* box-shadow:
   inset #009688 0 0 0 5px, 
   inset #059c8e 0 0 0 1px, 
   inset #0cab9c 0 0 0 10px, 
@@ -32,39 +44,65 @@
   inset #48e4d6 0 0 0 17px, 
   inset #e5f9f7 0 0 0 21px, 
   inset #bfecf7 0 0 0 22px;
-text-shadow: 3px 3px 1px #9cd6e5;
+text-shadow: 3px 3px 1px #9cd6e5; */
 font-size: 14.5px;
 font-weight: bold;
+
 }
 
 .Titlerule {
-  font-size: 27px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
   font-family: Paintlova;
-  animation: color-animation 4s linear infinite;
+  color:white;
+    animation: shake 0.8s infinite;
 }
 
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-5px) rotate(-5deg); }
+  20% { transform: translateX(5px) rotate(5deg); }
+  30% { transform: translateX(-5px) rotate(-5deg); }
+  40% { transform: translateX(5px) rotate(5deg); }
+  50% { transform: translateX(-5px) rotate(-5deg); }
+  60% { transform: translateX(5px) rotate(5deg); }
+  70% { transform: translateX(-5px) rotate(-5deg); }
+  80% { transform: translateX(5px) rotate(5deg); }
+  90% { transform: translateX(-5px) rotate(-5deg); }
+  100% { transform: translateX(0); }
+}
+
+
+
+
+
 .Intro {
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   font-family: Paintlova;
+  color:#F3EA68;
 }
 
 .Preparation {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   margin-top: 20px;
   text-align: center;
   font-family: Paintlova;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color:rgb(250, 103, 120);
 }
 
 .Howtoplay {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   margin-top: 20px;
   text-align: center;
   font-family: Paintlova;
+  margin-bottom: 0;
+  color:#F3EA68;
 }
 
 .Notabene {
@@ -72,10 +110,25 @@ font-weight: bold;
   margin-top: 20px;
   text-align: right;
 }
-
-li {margin-top: 1vh;
-  text-align: left;
+ol {
+  text-decoration: none;
+  margin-left: 0;;
+  padding-left: 0;
+ 
+}
+li {margin-top: 3vh;
+  text-decoration: none;
+  
 list-style: none;}
+
+.one {width:8vw;
+  margin-right:2vw;}
+
+.two {width:8vw;
+  margin-right:2vw;}
+
+.three {width:8vw;
+  margin-right:2vw;}
 
 @font-face {
   font-family: Fontmont;
@@ -84,6 +137,10 @@ list-style: none;}
 @font-face {
   font-family: Paintlova;
   src: url("./assets/paintlova.ttf");
+}
+@font-face {
+  font-family: Barlow;
+  src: url("./assets/Barlow.ttf");
 }
 
 
