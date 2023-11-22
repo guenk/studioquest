@@ -71,8 +71,8 @@ export default function App() {
         </p>
         <table border="1">
   <tr>
-    <th>Items</th>
-    <th>Points</th>
+    <th className="items">Items</th>
+    <th className="points">Points</th>
   </tr>
   <tr>
     <td>Plant</td>
