@@ -1,6 +1,6 @@
 
 import "./App.css";
-import logo from "./assets/log.png";
+import logo from "./assets/logo.png";
 import one from "./assets/1.png";
 import two from "./assets/2.png";
 import three from "./assets/3.png";

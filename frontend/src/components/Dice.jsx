@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./style.css";
 import { Wheel } from 'react-custom-roulette';
 
 export default function Dice() {
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(null);
-  const [isSpinning, setIsSpinning] = useState(false); // Nouvel état pour le numéro du prix
+  const [isSpinning, setIsSpinning] = useState(false);
+  const [buttonText, setButtonText] = useState('Spin the wheel!');
 
   const data = [
     { option: 'Logo/Colors', style: { backgroundColor: 'orange', textColor: 'black' } },
@@ -25,34 +26,37 @@ export default function Dice() {
   ];
 
   const handleSpinClick = () => {
-    if (!isSpinning) {
-      // Si la roue ne tourne pas déjà
-      setIsSpinning(true); // Indique que la roue commence à tourner
+    if (!isSpinning && !mustSpin) {
+      setIsSpinning(true);
       setMustSpin(true);
-
-      // Logique pour déterminer aléatoirement le prix sélectionné
       const randomIndex = Math.floor(Math.random() * data.length);
       setPrizeNumber(randomIndex);
+      setButtonText('Spinning...');
     }
   };
 
   const handleSpinComplete = () => {
-    // Réinitialisation une fois la rotation terminée
     setIsSpinning(false);
+    resetMustSpin();
+  };
+
+  const resetMustSpin = async () => {
+    await new Promise((resolve) => setTimeout(resolve, 300)); // Temporisation de 100 ms
     setMustSpin(false);
+    setButtonText('Spin the wheel!');
   };
 
   return (
     <>
       <button className="buttonspin" onClick={handleSpinClick} disabled={isSpinning}>
-        {isSpinning ? 'Spinning...' : 'Spin the wheel !'}
+        {buttonText}
       </button>
       <Wheel
         mustStartSpinning={mustSpin}
         prizeNumber={prizeNumber !== null ? prizeNumber : 0}
         data={data}
         backgroundColors={['#3e3e3e', '#df3428']}
-        textColors={['#ffffff']}
+        textColors={['black']}
         onComplete={handleSpinComplete}
       />
     </>
