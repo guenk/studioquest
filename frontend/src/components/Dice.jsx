@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import "./style.css";
 import { Wheel } from 'react-custom-roulette';
 
 export default function Dice() {
   const [mustSpin, setMustSpin] = useState(false);
-  const [prizeNumber, setPrizeNumber] = useState(null);
-  const [isSpinning, setIsSpinning] = useState(false);
-  const [buttonText, setButtonText] = useState('Spin the wheel!');
+  const [prizeNumber, setPrizeNumber] = useState(0);
+
 
   const data = [
     { option: 'Logo/Colors', style: { backgroundColor: 'orange', textColor: 'black' } },
@@ -26,38 +25,22 @@ export default function Dice() {
   ];
 
   const handleSpinClick = () => {
-    if (!isSpinning && !mustSpin) {
-      setIsSpinning(true);
-      setMustSpin(true);
-      const randomIndex = Math.floor(Math.random() * data.length);
-      setPrizeNumber(randomIndex);
-      setButtonText('Spinning...');
-    }
+    const newPrizeNumber = Math.floor(Math.random() * data.length);
+    setPrizeNumber(newPrizeNumber);
+    setMustSpin(true);
   };
 
-  const handleSpinComplete = () => {
-    setIsSpinning(false);
-    resetMustSpin();
-  };
-
-  const resetMustSpin = async () => {
-    await new Promise((resolve) => setTimeout(resolve, 300)); // Temporisation de 100 ms
-    setMustSpin(false);
-    setButtonText('Spin the wheel!');
-  };
 
   return (
     <>
-      <button className="buttonspin" onClick={handleSpinClick} disabled={isSpinning}>
-        {buttonText}
-      </button>
+      <button className="buttonspin"onClick={handleSpinClick}>Spin the weel ! </button>
       <Wheel
         mustStartSpinning={mustSpin}
-        prizeNumber={prizeNumber !== null ? prizeNumber : 0}
+        prizeNumber={prizeNumber}
         data={data}
-        backgroundColors={['#3e3e3e', '#df3428']}
-        textColors={['black']}
-        onComplete={handleSpinComplete}
+        onStopSpinning={() => {
+          setMustSpin(false);
+        }}
       />
     </>
   );
