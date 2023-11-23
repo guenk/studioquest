@@ -33,7 +33,7 @@ export default function Dice() {
 
   return (
     <>
-      <button className="buttonspin"onClick={handleSpinClick}>Spin the weel ! </button>
+      <button className="buttonspin"onClick={handleSpinClick}>Spin the wheel ! </button>
       <Wheel
         mustStartSpinning={mustSpin}
         prizeNumber={prizeNumber}
